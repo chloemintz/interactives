@@ -1,0 +1,13 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    background-color:rgb(255, 249, 241);
+}
+li {
+    text-align:justify;
+}
+div {
+    background-color:rgb(255, 222, 240);
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+}
