@@ -5,6 +5,10 @@ body {
     color: rgb(64, 50, 79);
 }
 
+a{
+  color: rgb(64, 50, 79);
+}
+
 li{
     display: inline;
 }
@@ -33,13 +37,10 @@ ul {
   background-color: #b9b8ba68;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
 .home_page_container {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 .home_page_container > div {
@@ -48,22 +49,24 @@ ul {
   line-height: 30px;
 }
 
-.portfolio_page_container {
-  display: flex;
-  flex-direction: column;
+.sample {
+  display: grid;
+  grid-template-columns: 300px 500px;
+  gap: 20px;
 }
 
-.sample_container {
-  display: flex;
-  flex-direction: column;
+.sample_left {
+  grid-column: 1;
 }
 
-.sample_container > div {
-  margin: 10px;
-  text-align: center;
-  line-height: 30px;
+.sample_right {
+  grid-column: 2;
 }
 
-.notes a:hover {
-  text-decoration: underline;
+.sample_text{
+  grid-template-rows: 1fr, 1fr;
+}
+
+.sample_text_down{
+  grid-row: 2;
 }
