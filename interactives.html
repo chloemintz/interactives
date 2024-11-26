@@ -9,20 +9,28 @@
 <style>
     body{
         text-align: left;
-        margin: 15px;
+        margin: 20px;
     }
     p{
         line-height: 1.7;
     }
 </style>
 <body>
+    <ul>
+        <li class="tab"><a href = "chloemintz_portfolio.html">Home</a></li>
+        <li class="tab"><a href = "portfolio_page.html">Portfolio</a></li>
+		<li class="tab"><a href = "notes_page.html">Notes</a></li>
+    <br>
+    </ul>
 <h1>Interactives</h1>
-<p>For Jour 320, I've created two graphics: a barchart visualizing the percentage of student identities held at each public high school, relative to their student bodies; the second is a map detailing the location of Chicago Public High Schools – the map itself is divvied into zip codes, each of which are "colored" by median household income.</p>
+<p>For Jour 320, I've created two graphics: a barchart visualizing the percentage of student identities held at each Chicago Public High School relative to their student bodies; the second is a map detailing the location of Chicago Public High Schools – the map itself is divvied into zip codes, each of which are colored by median household income.</p>
 
 <h3>Datasets of Interest and Data Aggregation</h3>
+<p>In terms of data aggregation, I first pooled the Chicago Data Portal for information concerning the profiles of Chicago Public Schools. Then, I imported the dataset into Google Sheets and created a pivot table, alphabetizing the list of schools, filtering for high schools and gathering values concerning the identities of their respective student bodies. Next, I imported my synthesized dataset into Flourish and created an interactive barchart.</p>
+<p>Interested in telling a larger story, I consulted Census Reporter and aggregated data concerning the geographic boundaries of Chicago zip codes and the median household income of each. Again, I imported the dataset into Flourish and created an interactive map. Then, I geocoded the lat-long of the Chicago Public High Schools from my previous dataset to determine if there was a possible relationship between the location of Chicago Public High Schools and the median incomes of their surrounding areas.</p>
 
 <h3>Data Visualization</h3>
-<p>The barchart I’ve created measures the percentage of student identities in Chicago Public High Schools, relative to the entirety of their student bodies. I’d like to note, several other student identities were listed in the dataset, including Native American and Asian Pacific Islander; however, due to minimal reporting, I chose not to include these identities.</p>
+<p>The barchart I’ve created measures the percentage of student identities held in Chicago Public High Schools relative to the entirety of their student bodies. I’d like to note, several other student identities were listed in the dataset, including Native American and Asian Pacific Islander; however, due to minimal reporting, I chose not to include these identities.</p>
 <div class="flourish-embed flourish-chart" data-src="visualisation/20189274"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20189274/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 <p>The map I've created illustrates the geographic location of each Chicago Public High School. The delineated regions of the map are zip codes and are colored by median household income. The darker a zip code's coloring, the greater its median household income.</p>
 <div class="flourish-embed flourish-map" data-src="visualisation/20264605"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20264605/thumbnail" width="100%" alt="map visualization" /></noscript></div>
@@ -31,4 +39,5 @@
 <p>Chicago Public High Schools do not, necessarily, densely populate a single zip code; however, fewer public schools are located in zip codes with median household incomes greater than $135,000. To that end, zip codes with median household incomes greater than $135,000 are largely concentrated in northern Chicago.</p>
 <h3>Next Steps</h3>
 <p>I find the trends I’ve gathered to be of interest as they beg the questions: (1) are student-aged residents of zip codes with median household incomes greater than $135,000 instead attending private schools? (2) what are the demographics of these private schools? and (3) do schools located within zip codes of median household incomes greater than $135,000 perform better than those located elsewhere?</p>
+<p>In terms of moving forward, I’d like to gather profiles pertaining to Chicago Private High Schools, and set said profiles against those of public high schools. I’d also like for my map to be a bit more navigable – I feel as if the number of points I’ve geocoded crowd the interactive and, occasionally, prevent meaningful analysis.</p>
 </html>
