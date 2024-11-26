@@ -70,3 +70,9 @@ ul {
 .sample_text_down{
   grid-row: 2;
 }
+
+.all container {
+  max-width: 50%;
+  margin-left: 25%;
+
+}
