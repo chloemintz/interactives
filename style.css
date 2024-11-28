@@ -48,31 +48,28 @@ ul {
   text-align: center;
   line-height: 30px;
 }
-
+/*here are the flex-boxes (and containers) I've created to design the grid-like shape for my portfolio*/
 .sample {
   display: grid;
+  place-items: center;
   grid-template-columns: 300px 500px;
-  gap: 20px;
+  grid-template-rows: auto;
 }
 
 .sample_left {
   grid-column: 1;
+  grid-row: 1;
 }
 
 .sample_right {
   grid-column: 2;
+  grid-row: 1;
 }
 
 .sample_text{
-  grid-template-rows: 1fr, 1fr;
+  grid-column: 1;
 }
 
 .sample_text_down{
   grid-row: 2;
-}
-
-.all container {
-  max-width: 50%;
-  margin-left: 25%;
-
 }
