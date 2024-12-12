@@ -48,7 +48,7 @@ ul {
   text-align: center;
   line-height: 30px;
 }
-/*here are the flex-boxes (and containers) I've created to design the grid-like shape for my portfolio*/
+/*here are the flex-boxes (and containers) I've created to design the grid-like shape for my portfolio – jk!
 .sample {
   display: grid;
   place-items: center;
@@ -72,4 +72,21 @@ ul {
 
 .sample_text_down{
   grid-row: 2;
+}
+putting all of this in the comment, b/c it didn't work :( */
+
+.sample_div{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (orientation: portrait) {
+  #sample_div {
+      flex-direction: column;
+  }
+}
+
+.home_page_div {
+  display: flex;
+  flex-direction: row;
 }
